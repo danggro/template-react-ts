@@ -1,6 +1,6 @@
 services:
   app:
-    image: nowted-frontend-image
+    image: frontend-image
     build:
       context: .
       dockerfile: dev.Dockerfile
@@ -9,4 +9,4 @@ services:
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
-    container_name: nowted-frontend-dev
+    container_name: frontend-dev
