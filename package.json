@@ -1,18 +1,25 @@
 {
-  "name": "react-ts-template",
+  "name": "@danggro/template-react-ts",
+  "private": false,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "template for react typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danggro/template-react-ts.git"
+  },
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "jest --watch-all"
-
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tmeplate",
+    "react",
+    "typescript"
+  ],
+  "author": "danggro",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
@@ -70,5 +77,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
