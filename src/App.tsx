@@ -1,6 +1,12 @@
-import './styles.css'
+import './assets/styles.css'
+import Home from './pages/Home'
 
 const App = () => {
-  return <>Hello</>
+  return (
+    <>
+      <h1>Hello</h1>
+      <Home />
+    </>
+  )
 }
 export default App
