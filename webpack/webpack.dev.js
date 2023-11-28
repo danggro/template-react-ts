@@ -1,7 +1,9 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 module.exports = {
   mode: 'development',
-  devtool: 'cheap-module-source-map',
   devServer: {
     port: '3000',
   },
+  plugins: [new MiniCssExtractPlugin()],
 }
